@@ -1,0 +1,53 @@
+
+
+.divTopo{
+    height: 100px;
+    background-color: #eaeaea;
+
+}
+.divConteudo{
+  //  background-color: #1759fc;
+    height: 100%;
+}
+
+
+.divEsquerda{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 500px;
+  //  background-color: #fc9621;
+}
+
+.divDireita{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 500px;
+ //   background-color: #f6affc;
+}
+.divVideo{
+    height: 50%;
+  //  background-color: #fc1f16;
+}
+
+.divTextoEsquerda{
+    margin-top: 5px;
+    height: 50%;
+  //  background-color: #2a7716;
+}
+
+.divTextDireita{
+    height: 50%;
+  //  background-color: #0f1677;
+}
+
+.divEmail{
+    height: 50%;
+    //background-color: #57405d;
+}
+.video{
+    width: 100%;
+    height: 100%;
+}
+.divTextDireita{
+    text-align: center;
+}
