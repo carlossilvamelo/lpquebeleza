@@ -12,66 +12,74 @@
 </head>
 <body>
 
-    <div id="container" class="divTopo col-lg-offset-2 col-lg-8 col-lg-offset-2">
-
+<div id="container" class="divTopo col-lg-offset-2 col-lg-8 col-lg-offset-2">
+    <div>
+        <img src="img/logo.png" alt="">
+    </div>
+    <div class="divLinksSocial">
         <a class=" fa fa-instagram fa-3x" href="#"></a>
         <a class=" fa fa-facebook-official fa-3x" href="#"></a>
     </div>
+</div>
 
-    <div class="divConteudo col-lg-offset-2 col-lg-8 col-lg-offset-2">
+<div class="divConteudo col-lg-offset-2 col-lg-8 col-lg-offset-2">
 
-        <div class="divEsquerda col-lg-6">
+    <div class="divEsquerda col-lg-6">
 
-            <div class="divVideo col-lg-12">
-                <iframe class="video" src="https://www.youtube.com/embed/vE-lN5aDWkc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-            </div>
-            <div class="divTextoEsquerda col-lg-12">
-
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula nisi,</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula nisi,</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula nisi,</p>
-                <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula nisi,</p>
-
-
-            </div>
+        <div class="divVideo col-lg-12">
+            <iframe class="video" src="https://www.youtube.com/embed/vE-lN5aDWkc" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
         </div>
-        <div class="divDireita col-lg-6">
+        <div class="divTextoEsquerda col-lg-12">
 
-            <div class="divTextDireita col-lg-12">
-                <h3>Você é um profissional de beleza autonomo ou gostaria de fazer seus serviços por conta própria?</h3>
-                <h4>serviços por conta própria?</h4>
-                <h5>A “QueBeleza” tem a intenção de ser um lugar digital onde os profissionais de beleza e os clientes se encontram, para interagir e realizar os serviços desejados.</h5>
+            <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula nisi,</p>
+            <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula nisi,</p>
+            <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula nisi,</p>
+            <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula nisi,</p>
 
-            </div>
-            <div class="divEmail col-lg-12">
-
-                <form class="" name="formulario" action="mail/contact_me.php" method="post">
-                    <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" class="form-control" id="nome" name="nome"  placeholder="Seu nome">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email" onblur="validacaoEmail(formulario.email)" aria-describedby="emailHelp" placeholder="Email">
-                    </div>
-
-                    <div class="check-form-style">
-                        <label class="form-check-label" for="checkReceberNovidades">Desejo receber novidades sobre o site</label>
-                        <br>
-                        <input type="checkbox" class="" id="checkReceberNovidades" name="checkReceberNovidades">
-                    </div>
-                    <br>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-
-                </form>
-            </div>
 
         </div>
-
 
     </div>
+    <div class="divDireita col-lg-6">
+
+        <div class="divTextDireita col-lg-12">
+            <p style="font-size: 25px; font-weight: bold; font-family: 'Comic Sans MS'">Você é um profissional de beleza autonomo ou gostaria de se tornar um?</p>
+            <p style="font-size: 20px; font-weight: bold; font-family: 'Comic Sans MS'">Então esta ideia é para você!</p>
+            <p style="font-size: 12px;  font-family: 'Comic Sans MS'">A “QueBeleza” tem a intenção de ser um lugar digital onde os profissionais de beleza e os clientes se
+                encontram, para interagir e realizar os serviços desejados.</p>
+
+        </div>
+        <div class="divEmail col-lg-12">
+
+            <form class="" name="formulario" action="mail/contact_me.php" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email"
+                           onblur="validacaoEmail(formulario.email)" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+
+                <div class="check-form-style">
+                    <label class="form-check-label" for="checkReceberNovidades">Desejo receber novidades sobre o
+                        site</label>
+                    <br>
+                    <input type="checkbox" class="" id="checkReceberNovidades" name="checkReceberNovidades">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+
+            </form>
+        </div>
+
+    </div>
+
+
+</div>
 
 </body>
 </html>
