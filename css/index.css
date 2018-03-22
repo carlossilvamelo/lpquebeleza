@@ -1,14 +1,16 @@
 
 
 body{
-
+    background-image: url("../img/fundo-small.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 
     z-index: -1;
 }
 
 .divTopo{
     height: 100px;
-    background-color: white;
+    background-color: rgba(255,255,255,.6);
 
 }
 .divTopo img{
@@ -19,10 +21,8 @@ body{
     opacity: 1;
     height: 100%;
     z-index: 1;
-    background-image: url("../img/img-fundo.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border-radius: 20px;
+
+
     background-color: rgba(255,255,255,.6);
 
 
@@ -42,7 +42,7 @@ body{
     margin-bottom: 1%;
     height: 500px;
     border-radius: 20px;
-    background-color: rgba(255,255,255,.6);
+   // background-color: rgba(255,255,255,.6);
 }
 .divVideo{
     height: 50%;
@@ -50,16 +50,18 @@ body{
 }
 
 .divTextoEsquerda{
-    margin-top: 5px;
+    margin-top: 20px;
     height: 50%;
-  //  background-color: #2a7716;
-    border-radius: 20px;
-    background-color: rgba(255,255,255,.6);
+    font-size: 12pt;
+    text-align: justify;
+    text-indent: 10%;
+    font-weight: bold;
 }
 
 .divTextDireita{
     height: 50%;
-  //  background-color: #0f1677;
+    margin-top: -5%;
+    padding-top: 0%;
     font-weight: bolder;
 }
 
@@ -67,7 +69,7 @@ body{
 
 .divEmail{
     height: 50%;
-    //background-color: #57405d;
+    margin-top: 10%;
 }
 .divEmail button{
     width: 100%;
@@ -83,4 +85,82 @@ body{
 .divLinksSocial{
 float: right;
 
+
+}
+.divLinksSocial a{
+    margin-left: 2px;
+    color: #9972a1;
+}
+
+.divLinksSocial a:hover{
+
+    color: #674e6f;
+
+}
+
+.checkBox{
+    padding: 20px;
+    margin-left: 20px;
+}
+
+
+
+/*Toast de informações*/
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+
+    background-color: #d4d4d4; /* Black background color */
+    color: var(--corAzulBase); /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 100px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 20%; /* Center the snackbar */
+    right: 20%;
+    font-size:20pt;
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 3.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+#pisca {
+    color: #5d4668;
+    transition: color .3s;
+}
+.mostrar {
+    color: rgba(151, 110, 159, 0.83) !important;
 }

@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favlogo.ico">
     <meta charset="UTF-8">
     <title>QueBeleza - O cuidado em suas mãos</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <script src="js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NV59D67');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115435010-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115435010-1');
+    </script>
+
 
 </head>
 <body>
 
-<div id="container" class="divTopo col-lg-offset-2 col-lg-8 col-lg-offset-2">
+<header id="container" class="divTopo col-lg-offset-2 col-lg-8 col-lg-offset-2">
     <div>
         <img src="img/logo.png" alt="">
     </div>
     <div class="divLinksSocial">
-        <a class=" fa fa-instagram fa-3x" href="#"></a>
-        <a class=" fa fa-facebook-official fa-3x" href="#"></a>
+        <a class=" fa fa-instagram fa-3x" target="_blank" href="https://www.instagram.com/quebeleza_app/"></a>
+        <a class=" fa fa-facebook-official fa-3x" target="_blank" href="https://www.facebook.com/QueBelezaRN/"></a>
     </div>
-</div>
+</header>
 
 <div class="divConteudo col-lg-offset-2 col-lg-8 col-lg-offset-2">
 
@@ -33,26 +56,23 @@
         </div>
         <div class="divTextoEsquerda col-lg-12">
 
-            <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula nisi,</p>
-            <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula nisi,</p>
-            <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula nisi,</p>
-            <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula nisi,</p>
-
+            <p>A "QueBeleza" é uma ideia que já está saindo do papel e logo logo vai fazer parte da comunidade de beleza do RN. Nossa intenção é fazer com que esse mercado poderoso possa crescer e se estruturar tecnologicamente. A intenção é estar perto de você profissional, para juntos criarmos uma ferramenta que possa viabilizar seu serviços autônomos, criando a possibilidade de você mesmo gerenciar todos os seus clientes e serviços da melhor forma possível. Vamos juntos nessa empreitada!</p>
 
         </div>
 
     </div>
     <div class="divDireita col-lg-6">
 
-        <div class="divTextDireita col-lg-12">
-            <p style="font-size: 25px; font-weight: bold; font-family: 'Comic Sans MS'">Você é um profissional de beleza autonomo ou gostaria de se tornar um?</p>
+        <div id="pisca"  class="divTextDireita col-lg-12">
+            <p style="font-size: 25px; font-weight: bold; font-family: 'Comic Sans MS'">Você é um profissional de beleza autônomo ou gostaria de se tornar um?</p>
             <p style="font-size: 20px; font-weight: bold; font-family: 'Comic Sans MS'">Então esta ideia é para você!</p>
-            <p style="font-size: 12px;  font-family: 'Comic Sans MS'">A “QueBeleza” tem a intenção de ser um lugar digital onde os profissionais de beleza e os clientes se
-                encontram, para interagir e realizar os serviços desejados.</p>
+            <br>
+            <p style="font-size: 16px;  font-family: 'Comic Sans MS'">A “QueBeleza” tem a intenção de ser um lugar digital onde os profissionais de beleza e os clientes se encontram, para interagir e realizar os serviços desejados.</p>
+
 
         </div>
         <div class="divEmail col-lg-12">
-
+            <p class="text-center" style=" border-radius: 20pt; background-color: #c894d0; color: #584360; font-weight: bold; font-size: 12pt">Cadastre-se e receba conteúdos e novidades!</p>
             <form class="" name="formulario" action="mail/contact_me.php" method="post">
                 <div class="form-group">
                     <label for="nome">Nome:</label>
@@ -61,17 +81,11 @@
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" class="form-control" id="email" name="email"
-                           onblur="validacaoEmail(formulario.email)" aria-describedby="emailHelp" placeholder="Email">
+                            aria-describedby="emailHelp" placeholder="Email">
                 </div>
 
-                <div class="check-form-style">
-                    <label class="form-check-label" for="checkReceberNovidades">Desejo receber novidades sobre o
-                        site</label>
-                    <br>
-                    <input type="checkbox" class="" id="checkReceberNovidades" name="checkReceberNovidades">
-                </div>
-                <br>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+
+                <button type="submit"  class="btn btn-primary">Cadastrar</button>
 
             </form>
         </div>
@@ -80,6 +94,91 @@
 
 
 </div>
+
+<div id="snackbar">
+    <img src="img/logo.png" width="20%" alt="">
+    <br>
+    <p id="pToast"></p>
+</div>
+
+
+
+<script language="javascript">
+    /*
+    * Validações de formulario de email e toast de informação
+    * */
+
+    window.onload = function(){
+        setInterval(pisca, 1500);
+        var url = window.location;
+        url = url.toString();
+
+        var parametrosDaUrl = url.split("?")[1];
+        var result = parametrosDaUrl.split("=")[1];
+       // console.log(result);
+        if(result == "ok"){
+            toastEmail(true)
+        }else{
+            // erro no envio do email
+            if(result == "fail")
+                toastEmail(false)
+        }
+
+    };
+
+
+
+    function toastEmail(retorno) {
+        // Get the snackbar DIV
+        var x = document.getElementById("snackbar")
+
+        // Add the "show" class to DIV
+        x.className = "show";
+        var paragrafo =  document.getElementById("pToast")
+        if(retorno){
+            paragrafo.innerHTML="Obrigado, sua mensagem chegará a equipe QueBeleza!";
+        }else{
+
+            paragrafo.style="color:red;";
+            paragrafo.innerHTML="Erro no envio do email, por favor tente novamente!";
+        }
+
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+
+    }
+
+    //Alert de validação de email
+    function validacaoEmail(field) {
+        usuario = field.value.substring(0, field.value.indexOf("@"));
+        dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+
+        if ((usuario.length >=1) &&
+            (dominio.length >=3) &&
+            (usuario.search("@")==-1) &&
+            (dominio.search("@")==-1) &&
+            (usuario.search(" ")==-1) &&
+            (dominio.search(" ")==-1) &&
+            (dominio.search(".")!=-1) &&
+            (dominio.indexOf(".") >=1)&&
+            (dominio.lastIndexOf(".") < dominio.length - 1)) {
+
+
+        }
+        else{
+           // alert("Digite um email válido!");
+            confirm("Digite um email válido!");
+        }
+    }
+
+
+</script>
+
+
+
+<script  src="js/piscar.js"></script>
+
+
 
 </body>
 </html>
