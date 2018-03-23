@@ -1,175 +1,202 @@
 
 
-body{
-    background-image: url("../img/fundo-small.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    z-index: -1;
-}
-
-.divTopo{
-    height: 100px;
-    background-color: rgba(255,255,255,.8);
-
-}
-.divTopo img{
-    float: left;
-    width: 12%;
-}
-.divConteudo{
-
-    opacity: 1;
-    height: 100%;
-    z-index: 1;
-    font-family: 'Maven Pro', sans-serif;
-
-    background-color: rgba(255,255,255,.8);
 
 
-}
+    body{
+        background-image: url("../img/fundo-small.png");
+        background-color: rgba(255,255,255,.8);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: -1;
+    }
+
+    .divTopo{
+        display: block;
+        height: 100%;
+
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+
+    }
+    .divTopo img{
+        float: left;
+        width: 10%;
+    }
+    .divConteudo{
+        display: block;
+        margin-top: 0px;
+        padding-top: 0px;
+        opacity: 1;
+        height: 100%;
+
+        font-family: 'Maven Pro', sans-serif;
+
+        background-color: rgba(255,255,255,.8);
 
 
-
-.divEsquerda{
-    margin-top: 1%;
-    margin-bottom: 1%;
-    height: 500px;
-  //  background-color: #fc9621;
-}
-
-.divDireita{
-    margin-top: 1%;
-    margin-bottom: 1%;
-    height: 500px;
-    border-radius: 20px;
-
-}
-.divVideo{
-    height: 50%;
-  //  background-color: #fc1f16;
-}
-
-.divTextoEsquerda{
-    margin-top: 20px;
-    height: 50%;
-    color: #c55076;
-    font-size: 12pt;
-    font-family: Arial;
-    text-align: justify;
-    font-weight: bold;
-    text-indent: 10%;
-
-}
-
-.divTextDireita{
-    height: 50%;
-    margin-top: -5%;
-    padding-top: 0%;
-    font-weight: bolder;
-    text-align: center;
-
-}
-.divTextDireita p{
-    font-family: 'Rubik', sans-serif;
-
-}
-
-
-.divEmail{
-    height: 50%;
-    margin-top: 10%;
-}
-.divEmail button{
-    width: 100%;
-}
-.video{
-    width: 100%;
-    height: 100%;
-}
-
-
-.divLinksSocial{
-float: right;
-
-
-}
-.divLinksSocial a{
-    margin-left: 2px;
-    color: #9972a1;
-}
-
-.divLinksSocial a:hover{
-
-    color: #674e6f;
-
-}
-
-.checkBox{
-    padding: 20px;
-    margin-left: 20px;
-}
+    }
 
 
 
-/*Toast de informações*/
+    .divEsquerda{
+        display: block;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        height: 100%;
+    //  background-color: #fc9621;
 
-/* The snackbar - position it at the bottom and in the middle of the screen */
-#snackbar {
-    visibility: hidden; /* Hidden by default. Visible on click */
-    min-width: 250px; /* Set a default minimum width */
+    }
 
-    background-color: #d4d4d4; /* Black background color */
-    color: var(--corAzulBase); /* White text color */
-    text-align: center; /* Centered text */
-    border-radius: 100px; /* Rounded borders */
-    padding: 16px; /* Padding */
-    position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
-    left: 20%; /* Center the snackbar */
-    right: 20%;
-    font-size:20pt;
-    bottom: 30px; /* 30px from the bottom */
-}
+    .divDireita{
+        white-space: normal;
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 1%;
+        height: 100%;
+        border-radius: 20px;
 
-/* Show the snackbar when clicking on a button (class added with JavaScript) */
-#snackbar.show {
-    visibility: visible; /* Show the snackbar */
+    }
+    .divVideo{
+        height: 300px;
+    //  background-color: #fc1f16;
+    }
 
-    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-    However, delay the fade out process for 2.5 seconds */
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 3.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
+    .divTextoEsquerda{
+        display: block;
+        margin-top: 10px;
+        height: 100%;
+        color: #c55076;
+        font-size: 100%;
+        font-family: Arial;
+        text-align: justify;
+        font-weight: bold;
+        text-indent: 10%;
 
-/* Animations to fade the snackbar in and out */
-@-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
+    }
 
-@keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-}
+    .divTextDireita{
+        display: block;
+        height: 50%;
+        padding-top: 0%;
+        font-weight: bolder;
+        text-align: center;
 
-@-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-}
+    }
+    .divTextDireita p{
+        font-family: 'Rubik', sans-serif;
 
-@keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-}
+    }
 
 
-#pisca {
-    color: #5d4668;
-    transition: color .3s;
-}
-.mostrar {
-    color: rgba(151, 110, 159, 0.83) !important;
-}
+    .divEmail{
+        display: block;
+        height: 50%;
+        margin-top: 10%;
+        font-size: 200%;
+    }
+    .divEmail input{
+        padding: 4%;
+        font-size: 20pt;
+    }
+    .divEmail button{
+        padding: 2%;
+
+        width: 100%;
+    }
+    .video{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .divLinksSocial{
+        display: block;
+        float: right;
+
+
+    }
+    .divLinksSocial a{
+        margin-left: 2px;
+        color: #9972a1;
+    }
+
+    .divLinksSocial a:hover{
+
+        color: #674e6f;
+
+    }
+
+    .checkBox{
+        padding: 20px;
+        margin-left: 20px;
+    }
+
+
+
+    /*Toast de informações*/
+
+    /* The snackbar - position it at the bottom and in the middle of the screen */
+    #snackbar {
+        visibility: hidden; /* Hidden by default. Visible on click */
+        min-width: 250px; /* Set a default minimum width */
+
+        background-color: #d4d4d4; /* Black background color */
+        color: var(--corAzulBase); /* White text color */
+        text-align: center; /* Centered text */
+        border-radius: 100px; /* Rounded borders */
+        padding: 16px; /* Padding */
+        position: fixed; /* Sit on top of the screen */
+        z-index: 1; /* Add a z-index if needed */
+        left: 20%; /* Center the snackbar */
+        right: 20%;
+        font-size:20pt;
+        bottom: 30px; /* 30px from the bottom */
+    }
+
+    /* Show the snackbar when clicking on a button (class added with JavaScript) */
+    #snackbar.show {
+        visibility: visible; /* Show the snackbar */
+
+        /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+        However, delay the fade out process for 2.5 seconds */
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 3.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    /* Animations to fade the snackbar in and out */
+    @-webkit-keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+
+    @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+
+    @-webkit-keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }
+
+    @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }
+
+
+    #pisca {
+        color: #5d4668;
+        transition: color .3s;
+    }
+    .mostrar {
+        color: rgba(151, 110, 159, 0.83) !important;
+    }
+
+
+    .palavraChave{
+        font-size: 130%;
+        color: rgba(1,126,3,0.61);
+    }
 
 
